@@ -1,15 +1,15 @@
 //komponenta (lepší pojmenovat s velkým písmenem, dělá se tam v reactu)
 //props je vždy objekt s nějakými vlastnostmi
 
-const ListItem = (props) => {
-    const { product, amount, unit, done } = props
+export const ListItem = (props) => {
+  const { product, amount, unit, done } = props
 
-    let tickClass = '';
-    if (done) {
-        tickClass = ' btn-tick--on';
-    }
+  let tickClass = '';
+  if (done) {
+    tickClass = ' btn-tick--on';
+  }
 
-    return `
+  return `
       <div class="list-item">
         <button class="icon-btn btn-tick${tickClass}"></button>
         <div class="list-item__body">

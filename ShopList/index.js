@@ -1,7 +1,9 @@
-const ShopList = (props) => {
-    const { dayName, items } = props
+import { ListItem } from '../ListItem/index.js'
 
-    return `
+export const ShopList = (props) => {
+  const { dayName, items } = props
+
+  return `
       <div class="shoplist">
         <div class="shoplist__head">
           <h2 class="shoplist__day">${dayName}</h2>

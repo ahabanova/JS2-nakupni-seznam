@@ -1,3 +1,5 @@
+import { ShopList } from './ShopList/index.js'
+
 const mainElm = document.querySelector('main')
 
 fetch('https://nakupy.kodim.app/api/sampleweek/mon')
